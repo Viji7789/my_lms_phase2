@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin= {"pretty","html:target/cucumber.html"}, // reporting purpose
+		plugin= {"pretty","html:target/cucumber.html","json:target/login.json"}, // reporting purpose
 		monochrome=true, //console output,
 				features="src\\test\\resources\\Features",
 		glue={"com.lms.stepDefinitions", "com.lms.AppHooks"},
