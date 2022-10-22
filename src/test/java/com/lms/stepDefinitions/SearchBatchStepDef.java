@@ -21,6 +21,7 @@ public class SearchBatchStepDef extends BaseClass{
 	public void user_clicks_on_search_box_with_entered_in_it(String batchname) {
 
 		managebatch.searchBatch("sdet");
+                System.out.println("User searches for " +batchname+ "Batch");
 
 	}
 
